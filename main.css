@@ -2,9 +2,10 @@
 /* Reset */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-*  {
+* {
     margin: 0;
 }
 
@@ -32,7 +33,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4em 8em 4em 8em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+header img {
+    max-width: 20%;
+    height: auto;
 }
 
 nav ol {
@@ -42,7 +49,7 @@ nav ol {
 }
 
 nav li::after {
-    content: " |";
+    content: " /";
     padding: 1.5em;
 }
 
@@ -51,6 +58,7 @@ nav li:last-child::after {
 }
 
 nav a {
+    font-size: x-large;
     text-decoration: none;
 }
 
@@ -59,8 +67,24 @@ main {
 }
 
 section {
-    margin: 1em;
+    margin: 1em 1em 6em 1em;
 }
+
+section h2{
+    color: #00326F;
+    margin-bottom: 1em;
+    border-bottom: solid 1px;
+}
+
+h2.left {
+    border-image: linear-gradient(to right, #F4F4F4, #00326F) 1;
+}
+
+h2.right {
+    text-align: right;
+    border-image: linear-gradient(to left, #F4F4F4, #00326F) 1;
+}
+
 
 .appraisals {
     display: grid;
