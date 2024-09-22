@@ -9,6 +9,7 @@ html {
     --brand-color: #00326f;
     --brand-green: #33db77; 
     --white-color: #f4f4f4;
+    --shawdow-color: #574ae2;
 }
 
 body {
@@ -91,6 +92,29 @@ section h2 {
     border-bottom: solid 1px;
 }
 
+a.button {
+    font-family: sans-serif;
+    margin-inline: auto;
+    cursor: pointer;
+    outline: 0 solid transparent;
+    border-radius: 0.5em;
+    color: white;
+    background-color: var(--brand-green);
+    padding-block: 0.2em;
+    padding-inline: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: var(--shawdow-color) 0 10px 20px -10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h2.left {
     border-image: linear-gradient(to right, #F4F4F4, #00326F) 1;
 }
@@ -145,4 +169,22 @@ h2.right {
     max-height: 100px;
     height: auto;
     width: auto;
+}
+
+.tiles {
+    display: flex;
+    gap: 1em;
+}
+
+.tile {
+    flex: 1;    
+}
+
+.tile p {
+    text-align: justify;
+    padding-inline: 3em;
+}
+
+.tile h4 {
+    text-align: center;
 }
