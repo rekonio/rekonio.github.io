@@ -11,25 +11,27 @@
   {{- end }}</head>
 <body>
   <header>
-    <img src="images/logo.svg"></img>
-    <nav>
-      <ol>
-        <li><a href="#security">Security</a></li>
-        <li><a href="#training">Training</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#development">Development</a></li>
-      </ol>
-    </nav>
-  </header>
+    <div class="top">
+      <img src="images/logo.png"></img>
+      <nav>
+        <ul>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#development">Development</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#product">Product</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
   <main>
     <section id="rekon">
-      <p>Reliable, modern software. Continuous security.</p>
-      <p>Expertise to delivers simpler, test driven, reliable, scalable and modern platforms.</p>
+        <p>Simple, modern software.</p>
+        <p>Continuous security.</p>
     </section>
+
     <section id="security">
       <h2 class="left">Security</h2>
-      <p>Securing products at the right level</p>
-      <p>Component audits, infra and cloud analysis, code reviews</p>
+      <p class="text-center">Securing products at the right level. Component audits, infra and cloud analysis, code reviews.</p>
       <div class="appraisals">
         <div class="appraisal top-left">
           <h3>“Simon's security audit on our wallet component saved us money before going to any ANSSI certification.”</h3>
@@ -47,7 +49,11 @@
           <h3>“We have strengthened and formalized our SDLC thanks to Simon. It enabled us to bump the security of our processes and set-up tools to ensure it stays secured”</h3>
           <div class="position"><span>Jeff - Information Security Officer, Hivebrite</span><img src="images/hivebrite-logo.png"></img></div>
         </div>
-    </div>
+      </div>
+    </section>
+    <section id="development">
+      <h2>Development</h2>
+      <p>Expertise to delivers scalable and secure products.</p>
     </section>
     <section id="training">
       <h2 class="right">Workshops and training</h2>
@@ -55,9 +61,9 @@
     <section id="product">
       <h2>Product</h2>
     </section>
-    <section id="development">
-      <h2>Development</h2>
-    </section>
   </main>
+  <footer>
+    Rekon Software and Security &copy; {{ now.Year }} - All rights reserved
+  </footer>
 </body>
 </html>

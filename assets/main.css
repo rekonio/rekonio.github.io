@@ -1,77 +1,86 @@
 
 /* Reset */
-html {
+*, ::before, ::after {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
-* {
-    margin: 0;
+html {
+    scroll-behavior: smooth;
+    --brand-color: #00326f;
+    --brand-green: #33db77; 
+    --white-color: #f4f4f4;
 }
 
 body {
+    margin: unset;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+main {
+    color: var(--brand-color);
+    margin: 3em;
 }
 
-input, button, textarea, select {
-    font: inherit;
+footer {
+    background-color: var(--brand-color);
+    color: var(--white-color);
+    margin-top: auto;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
 }
-
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-
-/* end of reset */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 6em;
-    margin-right: 6em;
+    background-color: var(--brand-color);
+    padding-block: 1em;
 }
 
 header img {
-    max-width: 20%;
+    max-inline-size: 15rem;
     height: auto;
 }
 
-nav ol {
+header .top {
     display: flex;
-    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 4em;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
     list-style: none;
-}
-
-nav li::after {
-    content: " /";
-    padding: 1.5em;
-}
-
-nav li:last-child::after {
-    content: none;
 }
 
 nav a {
     font-size: x-large;
     text-decoration: none;
+    color: var(--white-color);
 }
 
 nav a:hover {
-    color: #F2545B;
+    color: var(--brand-green);
 }
 
-main {
-    margin: 3em;
+#rekon {
+    margin-block: 5em;
+}
+
+#rekon p {
+    margin: unset;
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
 }
 
 section {
-    margin: 1em 1em 6em 1em;
+    margin-inline: 1em;
+}
+
+section p {
+    font-size: 1.5em;
 }
 
 section h2 {
@@ -91,6 +100,9 @@ h2.right {
     border-image: linear-gradient(to left, #F4F4F4, #00326F) 1;
 }
 
+.text-center {
+    text-align: center;
+}
 
 .appraisals {
     display: grid;
