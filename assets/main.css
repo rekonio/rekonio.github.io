@@ -188,3 +188,47 @@ h2.right {
 .tile h4 {
     text-align: center;
 }
+
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 0.5em;
+    margin-block: 2em;
+
+    img {
+        border-radius: 3%;
+    }
+}
+
+.workshop-title {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+}
+
+.workshop-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+
+.workshop-overview {
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+    padding-inline-start: 4em;;
+}
+
+.workshop-subtitle {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.workshop-content {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 3em;
+}

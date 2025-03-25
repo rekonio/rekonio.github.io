@@ -12,216 +12,229 @@
 {{ define "main" }}
     <h1 class="text-center">{{.Title}}</h1>
     <div class="tiles">
-        <div class="tile">
-            <h4>Professional Go</h4>
-            <p>Your customers expect reliable and tested code in their production systems!</p>
-            <p>In workshops, we teach the best ways to test and leverage the Go standard library first.</p>
-        </div>
-        <div class="tile">
-            <h4>Hands-on Trainers</h4>
-            <p>Workshops are conducted by seniors that work on advanced platforms everyday.</p>
-            <p>A proven track record for pragmatic and tested solutions, using their real life code examples when tutoring.</p>
-        </div>
-        <div class="tile">
-            <h4>One week post support</h4>
-            <p>Post workshop, we provide a week support for any remaining questions or topic.</p>
-            <p>Via video calls sessions we address together your challenges.</p>
-        </div>
+      <div class="tile">
+          <h4>Professional Go</h4>
+          <p>Your customers expect reliable, test driven code in their production systems!</p>
+          <p>During 2 days, we implement a real product, learn key concepts and how to best leverage the ecosystem.</p>
+      </div>
+      <div class="tile">
+          <h4>Hands-on Trainers</h4>
+          <p>Workshops are conducted by seniors that work on advanced platforms everyday.</p>
+          <p>A proven track record for pragmatic and tested solutions, using their real life solutions when tutoring.</p>
+      </div>
+      <div class="tile">
+          <h4>One week post support</h4>
+          <p>Post workshop, we provide support for any remaining questions or topic.</p>
+          <p>Via video calls sessions we address together your challenges.</p>
+      </div>
     </div>
     
-    <hr />
+    <div class="workshop-grid">
+      <div class="workshop-title"><h1>Workshop 1 / Start Go by implementing a real life project</h1></div>
+      
+      <div class="workshop-image">
+        <img loading="lazy" src="{{ ((resources.GetMatch "workshop-picture-1.jpg").Resize "700x").Permalink }}" />
+      </div>
 
-    <h1 class="text-center">Workshop 1 - Start Go by implementing a real life project</h1>
-    <div class="tiles">
-      <div class="tile">
-          <h4>Audience</h4>
-          <p>No prior knowledge of Go is necessary. But you are fluent in another programming language.</p>
-      </div>
-      <div class="tile">
-          <h4>Objectives</h4>
-          <p>By the end of this workshop you will have implemented advanced functionalities on a incrementally elaborated real life product.</p>
-          <p>You will have used key packages from the standard library, and learned how to compose them together.</p>
-          <p>You will be able to use the testing package in order to test your own code, and learn testing tips along the way.</p>
-      </div>
-      <div class="tile">
+      <div class="workshop-overview">
+        <div>
           <h4>Content</h4>
           <p>During this 2 days workshop, we will build together a incrementally complex devops tool with production quality code.</p>
           <p>Along with you doing the implementation accompanied, trainers will provide help, hints to guide you and also demo the basics and key concepts in Go.</p>
+        </div>
+        <div>
+            <h4>Audience</h4>
+            <p>No prior knowledge of Go is necessary. But you are fluent in another programming language.</p>
+        </div>
+        <div>
+            <h4>Objectives</h4>
+            <p>By the end of this workshop you will have implemented advanced functionalities on a incrementally elaborated real life product.</p>
+            <p>You will have used key packages from the standard library, and learned how to compose them together.</p>
+            <p>You will be able to use the testing package in order to test your own code, and learn testing tips along the way.</p>
+        </div>
       </div>
-    </div>
-    <h2>What you will learn to apply</h2>
-    <div class="tiles">
-      <div class="tile">
+
+      <div class="workshop-subtitle"><h2>What you will learn to apply</h2></div>
+
+      <div class="workshop-content">
+        <div>
           <h4>Testing packages</h4>
           <p>Testing is key in the Go ecosystem, and the standard library offers a lot.</p>
           <p>We will ensure we go through all the often overlooked methods from the package that will make you testing code simpler.</p>
-      </div>
-      <div class="tile">
-          <h4>Go system programming</h4>
-          <p>By leveraging Go local system packages (os, fs, exec, signal, etc.), we will code reliable and simple solutions to interact with the local system.</p>
-          <p>It will show you how to to implement in the future your own awesome and testable CLI.</p>
-      </div>
-      <div class="tile">
-          <h4>Functional principles in Go</h4>
-          <p>By making function first class citizen, Go allow us to have better design. This is essential to sound Go programming.</p>
-          <p>We will leverage that to make our devops tool much simpler and with more flexible and open code.</p>
-      </div>
-    </div>
-    <div class="tiles">
-      <div class="tile">
-        <h4>Go tips & tricks</h4>
-        <p>During those 2 days, many everyday tips and tricks from professionals will be distilled, the ones used at our daily jobs!</p>
-      </div>
-      <div class="tile">
-        <h4>Integration testing</h4>
-        <p>Learn how Go render integration testing easier.</p>
-        <p>Through the implementation of a real devops tool, let's ensure our code works with a few integration high level tests that will be simple and deterministic.</p>
-      </div>
-      <div class="tile">
-        <h4>Demos and explanations</h4>
-        <p>Intermittent to the coding of our product and tool, you will be able to sit back and watch demos and explanations on key concepts for your mastery of Go.</p>
+        </div>
+        <div>
+            <h4>Go system programming</h4>
+            <p>By leveraging Go local system packages (os, fs, exec, signal, etc.), we will code reliable and simple solutions to interact with the local system.</p>
+            <p>It will show you how to to implement in the future your own awesome and testable CLI.</p>
+        </div>
+        <div>
+            <h4>Functional principles in Go</h4>
+            <p>By making function first class citizen, Go allow us to have better design. This is essential to sound Go programming.</p>
+            <p>We will leverage that to make our devops tool much simpler and with more flexible and open code.</p>
+        </div>
+        <div>
+          <h4>Go tips & tricks</h4>
+          <p>During those 2 days, many everyday tips and tricks from professionals will be distilled, the ones used at our daily jobs!</p>
+        </div>
+        <div>
+          <h4>Integration testing</h4>
+          <p>Learn how Go render integration testing easier.</p>
+          <p>Through the implementation of a real devops tool, let's ensure our code works with a few integration high level tests that will be simple and deterministic.</p>
+        </div>
+        <div>
+          <h4>Demos and explanations</h4>
+          <p>Intermittent to the coding of our product and tool, you will be able to sit back and watch demos and explanations on key concepts for your mastery of Go.</p>
+        </div>
       </div>
     </div>
 
-    <hr />
+    <hr/>
 
-    <h1 class="text-center">Workshop 2 - Intermediates - Writing and testing Go production code</h1>
-    <div class="tiles">
-      <div class="tile">
-          <h4>Audience</h4>
-          <p>You have a good overview of what is Go but you have not used it much in production systems, and/or you have not leveraged yet all its package and powerful features as a language and ecosystem.</p>
-          <p>You want to start learning and/or improve your Test Driven Development in Go.</p>
-          <p>Ideally, you have completed workshop 1 and/or have an equivalent experience.</p>
+    <div class="workshop-grid">
+      <div class="workshop-title"><h1>Workshop 2 / Intermediates - Writing and testing Go production code</h1></div>
+    
+      <div class="workshop-image">
+        <img loading="lazy" src="{{ ((resources.GetMatch "workshop-picture-2.jpg").Resize "700x").Permalink }}" />
       </div>
-      <div class="tile">
-          <h4>Objectives</h4>
-          <p>You will learn to use less code to produce more robust production implementations.</p>
-          <p>We will leverage the standard Go library and it most important packages to the fullest, learning common and useful techniques and patterns along the way.</p>
-          <p>You will become a proficient Go tester of your own code.</p>
-      </div>
-      <div class="tile">
+
+      <div class="workshop-overview">
+        <div>
           <h4>Content</h4>
           <p>During this 2 days workshop, we will build together our own application with production quality code.</p>
           <p>The application built will be multi faceted to allow for the learning of various powerful and common Go techniques, and therefore going over the most important and useful part of the Go standard library.</p>
           <p>As of today, the Go ecosystem requires great knowledge in testing your own code! So throughout the workshop we introduce and teach you how to test drive your features professionally.</p>
+        </div>
+        <div>
+          <h4>Audience</h4>
+          <p>You have a good overview of what is Go but you have not used it much in production systems, and/or you have not leveraged yet all its package and powerful features as a language and ecosystem.</p>
+          <p>You want to start learning and/or improve your Test Driven Development in Go.</p>
+          <p>Ideally, you have completed workshop 1 and/or have an equivalent experience.</p>
+        </div>
+        <div>
+          <h4>Objectives</h4>
+          <p>You will learn to use less code to produce more robust production implementations.</p>
+          <p>We will leverage the standard Go library and it most important packages to the fullest, learning common and useful techniques and patterns along the way.</p>
+          <p>You will become a proficient Go tester of your own code.</p>
+        </div>
       </div>
-    </div>
-    <h2>What you will learn to apply</h2>
-    <div class="tiles">
-      <div class="tile">
+
+      <div class="workshop-subtitle"><h2>What you will learn to apply</h2></div>
+
+      <div class="workshop-content">
+        <div>
           <h4>Test Driven Development</h4>
           <p>Throughout our workshop most of our features will be implemented using TDD techniques. We will introduce and explained how best to do that in Go using the standard library.</p>
-      </div>
-      <div class="tile">
-          <h4>Master testing packages</h4>
-          <p>We will learn how to leverage the various testing/benching package and concepts provided by the standard library. Automated/scoped cleanups, closure/scope data setup, temporary data, etc.</p>
-      </div>
-      <div class="tile">
-          <h4>Robust and easy integration testing</h4>
-          <p>Learn how Go has rendered third party, HTTP servers & clients testing a breeze.</p>
-          <p>We will build our own APIs and client in order to understand all the ways how to deal tests our HTTP services.</p>
-      </div>
-    </div>
-    <div class="tiles">
-      <div class="tile">
-        <h4>IO package composition</h4>
-        <p>By building our own hasher program, we will learn one of the most important aspect of Go: IO composition.</p>
-      </div>
-      <div class="tile">
-        <h4>Concurrency</h4>
-        <p>By mimicking our own miner we will learn the necessary building blocks of various packages used for concurrency.</p>
-      </div>
-      <div class="tile">
-        <h4>Professional Go tips & tricks</h4>
-        <p>Going over packages, let's learn some useful and underused techniques that will make your code shorter and simpler!</p>
-      </div>
-    </div>    
-    <div class="tiles">
-      <div class="tile">
-        <h4>Error management</h4>
-        <p>How to simply handle errors and design encapsulated errors APIs. We will learn also what good logging is and errors wrapping.</p>
-      </div>
-      <div class="tile">
-        <h4>HTTP APIs and JSON</h4>
-        <p>We cover all there is to know about the standard library when it comes to JSON APIs as well as simple HTTP tracing, monitoring and race detection.</p>
-      </div>
-      <div class="tile">
-        <h4>Design patterns in Go</h4>
-        <p>We will learn important design patterns (GoF), how to apply them in Go and how they make your code more open for modifications.</p>
+        </div>
+        <div>
+            <h4>Master testing packages</h4>
+            <p>We will learn how to leverage the various testing/benching package and concepts provided by the standard library. Automated/scoped cleanups, closure/scope data setup, temporary data, etc.</p>
+        </div>
+        <div>
+            <h4>Robust and easy integration testing</h4>
+            <p>Learn how Go has rendered third party, HTTP servers & clients testing a breeze.</p>
+            <p>We will build our own APIs and client in order to understand all the ways how to deal tests our HTTP services.</p>
+        </div>
+        <div>
+          <h4>IO package composition</h4>
+          <p>By building our own hasher program, we will learn one of the most important aspect of Go: IO composition.</p>
+        </div>
+        <div>
+          <h4>Concurrency</h4>
+          <p>By mimicking our own miner we will learn the necessary building blocks of various packages used for concurrency.</p>
+        </div>
+        <div>
+          <h4>Professional Go tips & tricks</h4>
+          <p>Going over packages, let's learn some useful and underused techniques that will make your code shorter and simpler!</p>
+        </div>
+        <div>
+          <h4>Error management</h4>
+          <p>How to simply handle errors and design encapsulated errors APIs. We will learn also what good logging is and errors wrapping.</p>
+        </div>
+        <div>
+          <h4>HTTP APIs and JSON</h4>
+          <p>We cover all there is to know about the standard library when it comes to JSON APIs as well as simple HTTP tracing, monitoring and race detection.</p>
+        </div>
+        <div>
+          <h4>Design patterns in Go</h4>
+          <p>We will learn important design patterns (GoF), how to apply them in Go and how they make your code more open for modifications.</p>
+        </div>                
       </div>
     </div>
-    
-    <hr/>
 
-    <h1 class="text-center">Workshop 3 - Advanced Go for large production applications</h1>
-    <div class="tiles">
-      <div class="tile">
-          <h4>Audience</h4>
-          <p>Ideally, you have completed workshop 2 and/or have an equivalent experience. You know how to test drive your code (see workshop 2) and know how to use well the testing packages in Go.</p>
+
+    <hr />
+    <div class="workshop-grid">
+      <div class="workshop-title"><h1>Workshop 3 - Advanced Go for large production applications</h1></div>
+    
+      <div class="workshop-image">
+        <img loading="lazy" src="{{ ((resources.GetMatch "workshop-picture-3.jpg").Resize "700x").Permalink }}" />
       </div>
-      <div class="tile">
-          <h4>Objectives</h4>
-          <p>Within your backend team, take the lead for the advancement, design and testing of your Go codebase.</p>
-          <p>Learn new approaches and introduce your team to new ideas and practices that makes your product more manageable, testable, robust and simpler.</p>
-      </div>
-      <div class="tile">
+
+      <div class="workshop-overview">
+        <div class="tile">
           <h4>Content</h4>
           <p>During this 2 days workshop, we cover and use the patterns & topics described below in order to build our own production application along with the corresponding test suite.</p>
           <p>Once learned, those patterns and topics can be replicated across a large number of backend challenges and issues.</p>
+        </div>        
+        <div class="tile">
+          <h4>Audience</h4>
+          <p>Ideally, you have completed workshop 2 and/or have an equivalent experience. You know how to test drive your code (see workshop 2) and know how to use well the testing packages in Go.</p>
+        </div>
+        <div class="tile">
+            <h4>Objectives</h4>
+            <p>Within your backend team, take the lead for the advancement, design and testing of your Go codebase.</p>
+            <p>Learn new approaches and introduce your team to new ideas and practices that makes your product more manageable, testable, robust and simpler.</p>
+        </div>
       </div>
-    </div>
-    <h2>What you will learn to apply</h2>
-    <div class="tiles">
-      <div class="tile">
+
+      <div class="workshop-subtitle"><h2>What you will learn to apply</h2></div>
+
+      <div class="workshop-content">
+        <div class="tile">
           <h4>Go generators</h4>
           <p>Go generators are often not well known and underused. They offer very robust features. We will use them to automatize part of our code.</p>
-      </div>
-      <div class="tile">
-          <h4>Closures and functions objects</h4>
-          <p>Learn how to use closure and function objects to your advantage. We will decouple our configuration and improve and testing in our application.</p>
-      </div>
-      <div class="tile">
-          <h4>Testing APIs</h4>
-          <p>Take integration testing to the next level! Testing APIs, will provide deterministic setup, automatic cleanup and scale when a large numbers of developers are writing tests.</p>
-          <p>We will build our own APIs and client in order to understand all the ways how to deal tests our HTTP services.</p>
+        </div>
+        <div class="tile">
+            <h4>Closures and functions objects</h4>
+            <p>Learn how to use closure and function objects to your advantage. We will decouple our configuration and improve and testing in our application.</p>
+        </div>
+        <div class="tile">
+            <h4>Testing APIs</h4>
+            <p>Take integration testing to the next level! Testing APIs, will provide deterministic setup, automatic cleanup and scale when a large numbers of developers are writing tests.</p>
+            <p>We will build our own APIs and client in order to understand all the ways how to deal tests our HTTP services.</p>
+        </div>
+        <div class="tile">
+          <h4>Testing, sub-tests and scope</h4>
+          <p>Make your tests like specifications and leverage the scope to avoid data setup repetition.</p>
+        </div>
+        <div class="tile">
+          <h4>Powerful tool from IO package</h4>
+          <p>Mastering the Go IO package will allow you to implement more robust APIs for your production systems.</p>
+        </div>
+        <div class="tile">
+          <h4>Interface segregation & embedding</h4>
+          <p>Go beyond simple interface design to make your code and tests easier to manage. See how they fit with regular design patterns: template, etc.</p>
+        </div> 
+        <div class="tile">
+          <h4>Design patterns with Go</h4>
+          <p>Learn how to leverage known patterns in Go: adapter, template, bridge, etc. For instance we will support a multi provider in our built application.</p>
+        </div>
+        <div class="tile">
+          <h4>Third parties and external APIs</h4>
+          <p>Learn to isolate your third parties clients with Go internal package mechanism to avoid coupling and leaking.</p>
+        </div>
+        <div class="tile">
+          <h4>Encryption</h4>
+          <p>Encryption is necessary in today's DevOps pipeline. Learn how to provide easy and robust encryption for production application operational pipelines.</p>
+        </div>  
+        <div class="tile">
+          <h4>Mocking pitfalls</h4>
+          <p>Learn how mocking can degrade your codebase, and use alternatives.</p>
+        </div>
+        <div class="tile">
+          <h4>Events with Go channels</h4>
+          <p>Built an event driven pipeline in our workshop production code to learn how to leverage channel and the sync package.</p>
+        </div>                     
       </div>
     </div>
-    <div class="tiles">
-      <div class="tile">
-        <h4>Testing, sub-tests and scope</h4>
-        <p>Make your tests like specifications and leverage the scope to avoid data setup repetition.</p>
-      </div>
-      <div class="tile">
-        <h4>Powerful tool from IO package</h4>
-        <p>Mastering the Go IO package will allow you to implement more robust APIs for your production systems.</p>
-      </div>
-      <div class="tile">
-        <h4>Interface segregation & embedding</h4>
-        <p>Go beyond simple interface design to make your code and tests easier to manage. See how they fit with regular design patterns: template, etc.</p>
-      </div>
-    </div>    
-    <div class="tiles">
-      <div class="tile">
-        <h4>Design patterns with Go</h4>
-        <p>Learn how to leverage known patterns in Go: adapter, template, bridge, etc. For instance we will support a multi provider in our built application.</p>
-      </div>
-      <div class="tile">
-        <h4>Third parties and external APIs</h4>
-        <p>Learn to isolate your third parties clients with Go internal package mechanism to avoid coupling and leaking.</p>
-      </div>
-      <div class="tile">
-        <h4>Encryption</h4>
-        <p>Encryption is necessary in today's DevOps pipeline. Learn how to provide easy and robust encryption for production application operational pipelines.</p>
-      </div>
-    </div>
-    <div class="tiles">
-      <div class="tile">
-        <h4>Mocking pitfalls</h4>
-        <p>Learn how mocking can degrade your codebase, and use alternatives.</p>
-      </div>
-      <div class="tile">
-        <h4>Events with Go channels</h4>
-        <p>Built an event driven pipeline in our workshop production code to learn how to leverage channel and the sync package.</p>
-      </div>
-    </div>        
 {{ end }}
