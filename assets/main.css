@@ -65,11 +65,11 @@ nav a:hover {
     color: var(--brand-green);
 }
 
-#rekon {
+.transition {
     margin-block: 5em;
 }
 
-#rekon p {
+.transition p {
     margin: unset;
     font-size: 4em;
     font-weight: 300;
