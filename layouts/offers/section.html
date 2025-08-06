@@ -1,0 +1,22 @@
+{{ define "header" }}
+<div class="top">
+    <img src="/images/logo.png"></img>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+</div>
+{{ end }}
+
+{{ define "main"}}
+    <h1 class="title center">{{ .Title }}</h1>
+    <p>Our offers around hosting websites</p>
+    <div class="offers">
+        <ul>
+        {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></li>
+        {{ end }}
+        </ul>
+    </div>
+{{ end }}

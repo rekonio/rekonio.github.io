@@ -1,0 +1,15 @@
+{{ define "header" }}
+<div class="top">
+    <img src="/images/logo.png"></img>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+</div>
+{{ end }}
+
+{{ define "main"}}
+<h1 class="title center">{{ .Title }}</h1>
+{{ .Content }}
+{{ end }}
